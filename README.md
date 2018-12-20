@@ -1,0 +1,2 @@
+# SdiRiceviNotifica
+SdiRiceviNotifica wsdltophp
