@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace SDICoop/SdiRiceviNotifica\EnumType;
 
 /**
  * This class stands for esitoNotifica_Type EnumType

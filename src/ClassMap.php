@@ -1,4 +1,7 @@
 <?php
+
+namespace SDICoop/SdiRiceviNotifica;
+
 /**
  * Class which returns the class map definition
  * @package
@@ -13,11 +16,11 @@ class ClassMap
     final public static function get()
     {
         return array(
-            'fileSdIBase_Type' => '\\StructType\\FileSdIBase_Type',
-            'fileSdI_Type' => '\\StructType\\FileSdI_Type',
-            'fileSdIConMetadati_Type' => '\\StructType\\FileSdIConMetadati_Type',
-            'rispostaRiceviFatture_Type' => '\\StructType\\RispostaRiceviFatture_Type',
-            'rispostaSdINotificaEsito_Type' => '\\StructType\\RispostaSdINotificaEsito_Type',
+            'fileSdIBase_Type' => '\\SDICoop/SdiRiceviNotifica\\StructType\\FileSdIBase_Type',
+            'fileSdI_Type' => '\\SDICoop/SdiRiceviNotifica\\StructType\\FileSdI_Type',
+            'fileSdIConMetadati_Type' => '\\SDICoop/SdiRiceviNotifica\\StructType\\FileSdIConMetadati_Type',
+            'rispostaRiceviFatture_Type' => '\\SDICoop/SdiRiceviNotifica\\StructType\\RispostaRiceviFatture_Type',
+            'rispostaSdINotificaEsito_Type' => '\\SDICoop/SdiRiceviNotifica\\StructType\\RispostaSdINotificaEsito_Type',
         );
     }
 }

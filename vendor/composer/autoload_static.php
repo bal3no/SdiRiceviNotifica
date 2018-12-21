@@ -4,12 +4,16 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit7a37d41407430cbcf760f815ab0f25e0
+class ComposerStaticInitdd082e71d53d28d6143ff8cf141b7d8f
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
             'WsdlToPhp\\PackageBase\\' => 22,
+        ),
+        'S' => 
+        array (
+            'SDICoop/SdiRiceviNotifica\\' => 26,
         ),
     );
 
@@ -18,22 +22,13 @@ class ComposerStaticInit7a37d41407430cbcf760f815ab0f25e0
         array (
             0 => __DIR__ . '/..' . '/wsdltophp/packagebase/src',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/../..' . '/src',
+        'SDICoop/SdiRiceviNotifica\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
     );
 
     public static $classMap = array (
-        'ClassMap' => __DIR__ . '/../..' . '/src/ClassMap.php',
-        'EnumType\\EsitoNotifica_Type' => __DIR__ . '/../..' . '/src/EnumType/EsitoNotifica_Type.php',
-        'EnumType\\EsitoRicezione_Type' => __DIR__ . '/../..' . '/src/EnumType/EsitoRicezione_Type.php',
-        'ServiceType\\Notifica' => __DIR__ . '/../..' . '/src/ServiceType/Notifica.php',
-        'StructType\\FileSdIBase_Type' => __DIR__ . '/../..' . '/src/StructType/FileSdIBase_Type.php',
-        'StructType\\FileSdIConMetadati_Type' => __DIR__ . '/../..' . '/src/StructType/FileSdIConMetadati_Type.php',
-        'StructType\\FileSdI_Type' => __DIR__ . '/../..' . '/src/StructType/FileSdI_Type.php',
-        'StructType\\RispostaRiceviFatture_Type' => __DIR__ . '/../..' . '/src/StructType/RispostaRiceviFatture_Type.php',
-        'StructType\\RispostaSdINotificaEsito_Type' => __DIR__ . '/../..' . '/src/StructType/RispostaSdINotificaEsito_Type.php',
         'WsdlToPhp\\PackageBase\\AbstractSoapClientBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractSoapClientBase.php',
         'WsdlToPhp\\PackageBase\\AbstractStructArrayBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructArrayBase.php',
         'WsdlToPhp\\PackageBase\\AbstractStructBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructBase.php',
@@ -46,10 +41,9 @@ class ComposerStaticInit7a37d41407430cbcf760f815ab0f25e0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit7a37d41407430cbcf760f815ab0f25e0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit7a37d41407430cbcf760f815ab0f25e0::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit7a37d41407430cbcf760f815ab0f25e0::$fallbackDirsPsr4;
-            $loader->classMap = ComposerStaticInit7a37d41407430cbcf760f815ab0f25e0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitdd082e71d53d28d6143ff8cf141b7d8f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitdd082e71d53d28d6143ff8cf141b7d8f::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitdd082e71d53d28d6143ff8cf141b7d8f::$classMap;
 
         }, null, ClassLoader::class);
     }
