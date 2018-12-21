@@ -1,5 +1,5 @@
 {
-    "name": "sdicoop/SdiRiceviNotifica",
+    "name": "sdicoop/SdIRiceviNotifica",
     "description": "Package generated from SdIRiceviNotifica_v1.0.wsdl using wsdltophp/packagegenerator",
     "require": {
         "php": ">=5.3.3",
@@ -8,7 +8,7 @@
     },
     "autoload": {
         "psr-4": {
-            "SDICoop/SdiRiceviNotifica\\": "./src/"
+            "SDICoop\\SdIRiceviNotifica\\": "./src/"
         }
     }
 }

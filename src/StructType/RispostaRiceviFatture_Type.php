@@ -1,6 +1,6 @@
 <?php
 
-namespace SDICoop/SdiRiceviNotifica\StructType;
+namespace SDICoop\SdIRiceviNotifica\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,17 +35,17 @@ class RispostaRiceviFatture_Type extends AbstractStructBase
     }
     /**
      * Set Esito value
-     * @uses \SDICoop/SdiRiceviNotifica\EnumType\EsitoRicezione_Type::valueIsValid()
-     * @uses \SDICoop/SdiRiceviNotifica\EnumType\EsitoRicezione_Type::getValidValues()
+     * @uses \SDICoop\SdIRiceviNotifica\EnumType\EsitoRicezione_Type::valueIsValid()
+     * @uses \SDICoop\SdIRiceviNotifica\EnumType\EsitoRicezione_Type::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $esito
-     * @return \SDICoop/SdiRiceviNotifica\StructType\RispostaRiceviFatture_Type
+     * @return \SDICoop\SdIRiceviNotifica\StructType\RispostaRiceviFatture_Type
      */
     public function setEsito($esito = null)
     {
         // validation for constraint: enumeration
-        if (!\SDICoop/SdiRiceviNotifica\EnumType\EsitoRicezione_Type::valueIsValid($esito)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $esito, implode(', ', \SDICoop/SdiRiceviNotifica\EnumType\EsitoRicezione_Type::getValidValues())), __LINE__);
+        if (!\SDICoop\SdIRiceviNotifica\EnumType\EsitoRicezione_Type::valueIsValid($esito)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $esito, implode(', ', \SDICoop\SdIRiceviNotifica\EnumType\EsitoRicezione_Type::getValidValues())), __LINE__);
         }
         $this->Esito = $esito;
         return $this;
@@ -56,7 +56,7 @@ class RispostaRiceviFatture_Type extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \SDICoop/SdiRiceviNotifica\StructType\RispostaRiceviFatture_Type
+     * @return \SDICoop\SdIRiceviNotifica\StructType\RispostaRiceviFatture_Type
      */
     public static function __set_state(array $array)
     {

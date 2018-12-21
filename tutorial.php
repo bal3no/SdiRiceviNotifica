@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'SdIRiceviNotifica_v1.0.wsdl',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \SDICoop/SdiRiceviNotifica\ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \SDICoop\SdIRiceviNotifica\ClassMap::get(),
 );
 /**
  * Samples for Notifica ServiceType
  */
-$notifica = new \SDICoop/SdiRiceviNotifica\ServiceType\Notifica($options);
+$notifica = new \SDICoop\SdIRiceviNotifica\ServiceType\Notifica($options);
 /**
  * Sample call for NotificaEsito operation/method
  */
-if ($notifica->NotificaEsito(new \SDICoop/SdiRiceviNotifica\StructType\FileSdI_Type()) !== false) {
+if ($notifica->NotificaEsito(new \SDICoop\SdIRiceviNotifica\StructType\FileSdI_Type()) !== false) {
     print_r($notifica->getResult());
 } else {
     print_r($notifica->getLastError());

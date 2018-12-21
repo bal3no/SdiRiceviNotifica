@@ -1,6 +1,6 @@
 <?php
 
-namespace SDICoop/SdiRiceviNotifica\ServiceType;
+namespace SDICoop\SdIRiceviNotifica\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Notifica extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \SDICoop/SdiRiceviNotifica\StructType\FileSdI_Type $parameters
-     * @return \SDICoop/SdiRiceviNotifica\StructType\RispostaSdINotificaEsito_Type|bool
+     * @param \SDICoop\SdIRiceviNotifica\StructType\FileSdI_Type $parameters
+     * @return \SDICoop\SdIRiceviNotifica\StructType\RispostaSdINotificaEsito_Type|bool
      */
-    public function NotificaEsito(\SDICoop/SdiRiceviNotifica\StructType\FileSdI_Type $parameters)
+    public function NotificaEsito(\SDICoop\SdIRiceviNotifica\StructType\FileSdI_Type $parameters)
     {
         try {
             $this->setResult($this->getSoapClient()->NotificaEsito($parameters));
@@ -32,7 +32,7 @@ class Notifica extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \SDICoop/SdiRiceviNotifica\StructType\RispostaSdINotificaEsito_Type
+     * @return \SDICoop\SdIRiceviNotifica\StructType\RispostaSdINotificaEsito_Type
      */
     public function getResult()
     {
